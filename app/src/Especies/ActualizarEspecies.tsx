@@ -69,7 +69,7 @@ const ActualizarEspecies = () => {
         })
         .then(result => {
             console.log(result)
-            navigate("/especies")
+            navigate("/")
         })
         .catch((err: unknown) => {
             if (axios.isAxiosError(err)) {
