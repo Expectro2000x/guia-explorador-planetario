@@ -5,11 +5,11 @@
     {
       "src": "index.ts",
       "use": "@vercel/node",
-      "entrypoint": "index.js" // Especifica el punto de entrada JS
+      "entrypoint": "index.js"
     }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "/" }
   ],
-  "buildCommand": "npm run build" // Usa un script de build en package.json
+  "buildCommand": "npm run build"
 }
