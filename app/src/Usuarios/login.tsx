@@ -17,7 +17,7 @@ const PaginaLogin = () => {
     useEffect(() => { //Verificacion de si ya se ha iniciado sesion, de ser el caso es redirigido
         const token = localStorage.getItem('token');
         if (token) {
-            navigate('/especies'); 
+            navigate('/'); 
         }
     }, [navigate]);
 
