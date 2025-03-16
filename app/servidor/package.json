@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "dev": "npx tsx index.ts"
+    "dev": "npx tsx index.ts",
+    "build": "npx prisma generate && npx tsc",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
