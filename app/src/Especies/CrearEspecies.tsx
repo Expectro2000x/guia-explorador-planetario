@@ -29,7 +29,7 @@ const CrearEspecies = () => {
         })
         .then(result => {
             console.log(result)
-            navigate("/especies")
+            navigate("/")
             })
             .catch((error: unknown) => {
                 if (axios.isAxiosError(error)) {
