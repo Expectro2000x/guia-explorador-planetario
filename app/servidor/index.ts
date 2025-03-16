@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 import express, { Request, Response, NextFunction } from "express";
-import router from "./routes/index";
+import router from "./routes/index.js";
 import cors from "cors";
 import { PrismaClient } from '@prisma/client';
 //Generador de llave secret de ser necesario:
@@ -16,7 +16,7 @@ console.log(newSecretKey); */
 
 const app = express();
 const prisma = new PrismaClient();
-const FRONTEND_URL = import.meta.env.VITE_BACKEND_URL;
+const FRONTEND_URL = process.env.FRONTEND_URL;
 
 const corsOptions = {
   origin: FRONTEND_URL,
