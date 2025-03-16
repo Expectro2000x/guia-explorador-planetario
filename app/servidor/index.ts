@@ -16,7 +16,14 @@ console.log(newSecretKey); */
 
 const app = express();
 const prisma = new PrismaClient();
-app.use(cors());
+const FRONTEND_URL = import.meta.env.VITE_BACKEND_URL;
+
+const corsOptions = {
+  origin: FRONTEND_URL,
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Middleware para errores
