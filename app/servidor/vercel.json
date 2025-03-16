@@ -4,8 +4,7 @@
   "builds": [
     {
       "src": "index.ts",
-      "use": "@vercel/node",
-      "entrypoint": "index.js"
+      "use": "@vercel/node"
     }
   ],
   "routes": [
